@@ -1,0 +1,28 @@
+  
+  /* Style the down arrow icon when the collapsible is collapsed */
+  .collapsed .arrow-icon > svg:nth-child(1) {
+    display: inline;
+  }
+  
+  /* Hide the up arrow icon when the collapsible is collapsed */
+  .collapsed .arrow-icon > svg:nth-child(2) {
+    display: none;
+  }
+  
+  /* Show the up arrow icon when the collapsible is expanded */
+  .btn[aria-expanded="true"] .arrow-icon > svg:nth-child(1) {
+    display: none;
+  }
+  
+  /* Style the up arrow icon when the collapsible is expanded */
+  .btn[aria-expanded="true"] .arrow-icon > svg:nth-child(2) {
+    display: inline;
+  }
+  
+  /* Update the CSS to align the arrow icons to the right of the parent container */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This ensures proper vertical alignment of the arrow icons */
+  }
+  
